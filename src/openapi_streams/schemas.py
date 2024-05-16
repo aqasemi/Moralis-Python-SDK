@@ -333,7 +333,7 @@ class Schema:
             ApiTypeError: when the input type is not in the list of allowed spec types
         """
         base_class = type(arg)
-        if base_class not in cls._types:
+        if base_class not in cls._types and cls.__name__ != "abi":
             raise cls.__get_type_error(
                 arg,
                 validation_metadata.path_to_item,
