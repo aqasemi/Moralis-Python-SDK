@@ -19,6 +19,6 @@ setup(
     install_requires=REQUIRES,
     package_dir={'': 'src'},
     packages=find_packages('src'),
-    long_description=open('README.md').read(),
+    long_description="",
     long_description_content_type='text/markdown',
 )
